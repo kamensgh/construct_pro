@@ -1,0 +1,49 @@
+<nav class="navbar navbar-expand-lg position-absolute w-100" id="myHeader">
+  <div class="container">
+    <a class="navbar-brand" href="{{ baseUrl }}/html/index.html">
+      <img src="{{ baseUrl }}/app/dist/images/logo.png" class="img-fluid" width="62" />
+
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" class="logo1" xmlns:xlink="http://www.w3.org/1999/xlink" width="22.29" height="25.096"
+          viewBox="0 0 22.29 25.096">
+          <defs>
+            <clipPath id="a">
+              <rect width="22.29" height="25.096" fill="none" />
+            </clipPath>
+          </defs>
+          <g clip-path="url(#a)">
+            <g transform="translate(0 -1.871)">
+              <path
+                d="M.346,1.993a1.19,1.19,0,0,1,.707-.108H21.546l.047,0a.7.7,0,0,1,.58.377h0a1.337,1.337,0,0,1,.115.553,1.4,1.4,0,0,1-.009.162V5.749a1.373,1.373,0,0,1,.008.156,1.346,1.346,0,0,1-.1.527v0a.7.7,0,0,1-.582.38c-.021,0-.041,0-.061,0H1.045a1.181,1.181,0,0,1-.174.012A1.282,1.282,0,0,1,.343,6.7l.012.005A.789.789,0,0,1,0,6.133V2.594a.833.833,0,0,1,.342-.6l0,0Z"
+                fill="#fff" />
+              <path
+                d="M.255,14.035c.144-.136.323-.094.485-.1H15.267c.283-.026.524.365.515.781v3.145a1.387,1.387,0,0,1,.007.144,1.464,1.464,0,0,1-.121.582l0-.012a.457.457,0,0,1-.443.287H.488c-.25,0-.465-.307-.494-.674V14.646a.931.931,0,0,1,.261-.616l0,0Z"
+                transform="translate(6.289 -1.977)" fill="#fff" />
+              <path
+                d="M0,26.692c.078-.415.335-.715.641-.715a.511.511,0,0,1,.056,0h20.85l.044,0a.689.689,0,0,1,.557.337h0a.965.965,0,0,1,.131.5c0,.019,0,.039,0,.058v3.285a.731.731,0,0,1-.733.753H.739a.488.488,0,0,1-.088.008c-.3,0-.557-.282-.65-.675V26.692Z"
+                transform="translate(0 -3.952)" fill="#fff" />
+            </g>
+          </g>
+        </svg>
+       
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="logo2" xmlns:xlink="http://www.w3.org/1999/xlink" width="25.129" height="25.368"  viewBox="0 0 91.461 83.46"><defs><clipPath id="a"><rect width="91.461" height="83.46" fill="none"/></clipPath></defs><g clip-path="url(#a)"><g transform="translate(0 0)"><path d="M1.418,2.221a6.816,6.816,0,0,1,2.9-.309H88.6a3.135,3.135,0,0,1,2.381,1.077h0a2.858,2.858,0,0,1,.454,1.577,2.794,2.794,0,0,1-.036.454v7.915a2.727,2.727,0,0,1,.032.454,2.844,2.844,0,0,1-.409,1.5h0a3.131,3.131,0,0,1-2.39,1.086H4.289a6.938,6.938,0,0,1-.713.036,7.22,7.22,0,0,1-2.167-.382h.05A2.326,2.326,0,0,1,0,14.03V3.934A2.363,2.363,0,0,1,1.4,2.221h0Z" transform="translate(0 -1.871)" fill="#fcad00"/><path d="M1.066,14.25a3.635,3.635,0,0,1,1.99-.286h59.6a2.14,2.14,0,0,1,2.113,2.24v9.019a2.789,2.789,0,0,1,.027.413,3.153,3.153,0,0,1-.5,1.668v-.036a2.022,2.022,0,0,1-1.817.822H2.021A2.145,2.145,0,0,1-.006,26.159V15.99a2.363,2.363,0,0,1,1.072-1.768h0Z" transform="translate(25.787 17.915)" fill="#fcad00"/><path d="M0,28.022a2.726,2.726,0,0,1,2.631-2.045H88.6a3.181,3.181,0,0,1,2.272.963h0a2.154,2.154,0,0,1,.536,1.431v9.542a1.818,1.818,0,0,1-.85,1.522,3.744,3.744,0,0,1-2.158.632H3.031A2.813,2.813,0,0,1,0,38.177Z" transform="translate(0 38.14)" fill="#fcad00"/></g></g></svg>
+      </span>
+    </button>
+
+    <div class="collapse navbar-collapse d-lg-flex justify-content-md-end" id="navbarTogglerDemo02">
+      <ul class="ml-lg-5 mr-auto mt-2 mt-lg-0 navbar-nav pl-lg-5 text-center">
+        {% import '../links/_nav_links.njk' as nav %}
+        {{nav.active( activeNav, baseUrl )}}
+      </ul>
+
+      <div class="bg-accent">
+        <a href="contact_us.html" class="btn btn-outline-white sm">Contact Us</a>
+      </div>
+    </div>
+  </div>
+
+</nav>
